@@ -10,7 +10,9 @@ public interface ItemDAO {
     
     Item getItemById(int id);
     
-    Item getItemByName(String name);
+    void deleteItem(int id);
+    
+    void editItem(Item item);
     
     List<Item> getItems();
 }
